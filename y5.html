@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBGO</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+        .ybgo{
+            width: 300px;
+            margin-top: -4%;
+        }
+        .container{
+            background-color: #2565DF;
+            z-index: -1;
+            border-radius: 20px;
+            height: 310px;
+        }
+        .main{
+            display: flex;
+            gap: 90px;
+        }
+        .welcome{
+            margin-left: 23px;
+        }
+        .welcome h3{
+            color: #fff;
+        }
+        .welcome p{
+            color: #fff;
+            margin-top: -12%;
+        }
+        .notify{
+            width: 32px;
+            height: 30px;
+            margin-top: 25px;
+        }
+        .rectangle{
+            background-color: #D2D2D2;
+            width: 250px;
+            height: 120px;
+            border-radius: 20px;
+            margin-left: 8%;
+        }
+        .squares{
+            display: flex;
+            gap: 11px;
+            padding-left: 9%;
+            padding-top: 5%;
+        }
+        .square1{
+            background-color: #fff;
+            border-radius: 10px;
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+        }
+        .square2{
+            background-color: #fff;
+            border-radius: 10px;
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+        }
+        .square3{
+            background-color: #E77528;
+            border-radius: 10px;
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+        }
+        .square1 hr{
+            width: 70%;
+            margin-top: -7%;
+        }
+        .square2 hr{
+            width: 70%;
+            margin-top: 1%;
+        }
+        .square3 hr{
+            width: 70%;
+            margin-top: 6%;
+        }
+        .square1 p{
+            font-size: 11px;
+            margin-top: -5%;
+            margin-left: 16%;
+        }
+        .square2 p{
+            font-size: 11px;
+            margin-top:-6%;
+            margin-left: 10%;
+        }
+         .square3 p{
+            color: #fff;
+            font-size: 11px;
+            margin-top: -6%;
+            margin-left: 10%;
+        }
+        .square1 img{
+            margin-left: 10%;
+            margin-top: -2%;
+            height: 60px;
+        }
+        .square2 img{
+            margin-left: 20%;
+            margin-top: 10%;
+            height: 45px;
+        }
+        .square3 img{
+            margin-left: 22%;
+            margin-top: 6%;
+            height: 45px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        .destination, .city{
+            padding: 4% 10%;
+            width: 70%;
+            background-color: transparent;
+            border: 1px solid #233393;
+            border-radius: 10px;
+        }
+        .desti i{
+            position: absolute;
+            color: #2565DF;
+            padding: 0.8%;
+        }
+        .mycity i{
+            position: absolute;
+            padding: 0.8%;
+        }
+        .Datetime{
+            display: flex;
+            margin-top: 7%;
+        }
+        .date i{
+            position: absolute;
+            padding: 0.8% 1%;
+            color: #012B86;
+        }
+        .time i{
+            position: absolute;
+            padding: 0.8% 1%;
+            color: #012B86;
+        }
+        .date{
+            margin-left: 10%;
+        }
+        .Date{
+            font-size: 14px;
+            width: 57%;
+            padding: 9% 7% 7% 22%;
+            background-color: transparent;
+            border: 1px solid #233393;
+            border-radius: 10px;
+            z-index: -1;
+        }
+        .Time{
+            font-size: 14px;
+            width: 57%;
+            padding: 8% 1% 8% 22%;
+            background-color: transparent;
+            border: 1px solid #233393;
+            border-radius: 10px;
+            z-index: -1;
+        }
+        .date p{
+            background-color: #fff;
+            position: absolute;
+            font-size: 12px;
+            left: 44%;
+            top: 67.3%;
+        }
+        .time p{
+            background-color: #fff;
+            position: absolute;
+            font-size: 12px;
+            left: 52.5%;
+            top: 67.3%;
+        }
+        .menu{
+            display: flex;
+            gap: 26px;
+            padding-left: 6%;
+            padding-top: 2%;
+            border-radius: 12px;
+            border-top: 2px solid #2565DF;
+            margin-top: 5%;
+            position: relative;
+        }
+        .menu p{
+            font-size: 10px;
+        }
+        .home p{
+            padding-left: 10%;
+        }
+        .offer p{
+            padding-left: 15%;
+        }
+        .profile p{
+            padding-left: 8%;
+        }
+        .line{
+            position: absolute;
+            width: 7%;
+            top: 89%;
+            left: 46.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="ybgo">
+        <div class="container">
+            <div class="main">
+                <div class="welcome">
+                    <h3>HI,</h3>
+                    <p>Welcome to YBGO!!</p>
+                </div>
+                <div class="notification">
+                    <img src="Group 296.png" class="notify">
+                </div>
+            </div>
+            <div class="rectangle"></div>
+            <div class="squares">
+                <div class="square1">
+                    <img src="image 21 (1).png">
+                    <hr>
+                    <p>Out Station</p>
+                </div>
+                <div class="square2">
+                    <img src="image 21.png">
+                    <hr>
+                    <p>Airport/Local</p>
+                </div>
+                <div class="square3">
+                    <img src="image 20 (1).png">
+                    <hr>
+                    <p>Hourly Rental</p>
+                </div> 
+            </div>
+        </div>
+        <div class="input">
+            <div class="desti">
+                <i class='bx bx-radio-circle'></i>
+                <input type="text" class="destination" placeholder="Select Your City">
+            </div>
+           <div class="mycity">
+                <i class='bx bx-plus' ></i>
+                <input type="text" class="city" placeholder="Select Your Packages">
+           </div>
+        </div>
+        <div class="Datetime">
+            <div class="date">
+                <p>Pickup Date </p>
+                <i class='bx bxs-calendar'></i>
+                <input type="datetime" class="Date" value="13-05-2024">
+            </div>
+            <div class="time">
+                <p>Pickup Time</p>
+                <i class='bx bx-time' ></i>
+                <input type="datetime" class="Time" value="08:20 PM">
+            </div>
+        </div>
+        <div class="menu">
+            <div class="home">
+                <img src="home 1.png">
+                <p>Home</p>
+            </div>
+           <div class="booking">
+                <img src="booking.png">
+                <p>Bookings</p>
+           </div>
+            <div class="offer">
+                <img src="offer.png">
+                <p>Offers</p>
+            </div>
+            <div class="support">
+                <img src="support.png">
+                <p>Support</p>
+            </div>
+            <div class="profile">
+                <img src="profile.png">
+                <p>Profile</p>
+            </div>
+        </div>
+        <div class="Line">
+            <img src="Rectangle 14.png" class="line">
+        </div>
+    </div>
+</body>
+</html>
